@@ -16,3 +16,4 @@ document.querySelector('.slider_prev').addEventListener('click',function() {
     }
     sliderLine.style.left = -offset + 'px';
 })
+

@@ -450,8 +450,8 @@ body{
     white-space: nowrap;
     
 }
-.header_item_btn:hover, .header_item_btn:focus, .header_item_btn:active{
-    box-shadow: 0 0 5px;
+.header_item_btn:hover, .header_item_btn:focus, .header_item_btn:active, .get_ntfd_form_btn:hover, .get_ntfd_form_btn:focus, .get_ntfd_form_btn:active{
+    box-shadow: 0 0 7px;
     filter: drop-shadow(-150px 0px 150px #02160B);
     border-color:#07b6ea;
 }
@@ -471,6 +471,9 @@ body{
 
 /*Header styles end*/
 /*Main styles start*/
+.main{
+    background-color: #CCCCCC;
+}
 .survival{
     min-height: 100vh;
     background: url(../img/survival-bg.jpg) no-repeat center;
@@ -500,7 +503,7 @@ h1{
     
    
 }
-.survival button{
+button[type="submit"]{
     width: 160px;
     height: 60px;
     background: #CD6326;
@@ -521,22 +524,19 @@ text-align: center;
 text-decoration: none;
 color: #F7F7F7;
     }
-.survival a:hover{
-text-decoration: underline;
-text-decoration-color:#07b6ea ;
-    }
-.survival button:hover{
+
+button[type="submit"]:hover, input[type="submit"]:hover{
     box-shadow: 0 0 5px;
     filter: drop-shadow(-150px 0px 150px #02160B);
-    border-radius: 0px;
+    border-radius: 5px;
     border-color:#07b6ea;
 }
-.survival h1:hover, .survival p:hover,.survival button+a:hover{
-    text-decoration: underline;
-    text-decoration-color: #07b6ea;
+ h1:hover, .survival a:hover, .survival p:hover,.survival button+a:hover{
+    text-decoration: underline 3px solid #07b6ea;
+   
 }
 /*Articles style start*/
-.articles{
+.latest_articles{
     background: #CCCCCC;
 }
 h2{
@@ -546,7 +546,7 @@ h2{
     color: #333333;
     padding-top: 120px;
 }
-.articles p{
+.latest_articles p{
     font-size: 24px;
     line-height:36px;
     text-align: center;
@@ -557,6 +557,7 @@ h2{
 
 .slider{
     max-width: 1172px;
+    padding-bottom: 239px;
 }
 .slider_line{
     display:flex;
@@ -588,9 +589,9 @@ h4{
     
 }
 
-h2:hover, .articles p:hover, h4:hover, .slide p:hover{
-    text-decoration: underline;
-    text-decoration-color: #07b6ea;
+h2:hover, .latest_articles p:hover, h4:hover, .slide p:hover, h3:hover, input[type="text"]:hover::placeholder,input[type="submit"]:active{
+    text-decoration: underline 3px solid #07b6ea;
+   
 }
 .slider_next path, .slider_prev path{
     fill: #666666;
@@ -608,7 +609,46 @@ h2:hover, .articles p:hover, h4:hover, .slide p:hover{
     line-height: 27px;
     text-align: center;
     color: #F7F7F7;
-    
+    }
+h3{
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 59px;
+}
+.get_notified_form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 239px;
+   
+}
+input[type="text"]{
+    width: 510px;
+    height: 60px;
+    border:1px solid #666666;
+    background: #CCCCCC;
+    border-radius: 0px;
+    margin-left: 0px;
+         
+}
+input[type="text"]::placeholder{
+    padding-left: 15px;
+}
+
+input[type="submit"]{
+    width: 120PX;
+    height: 60px;
+    background: #CD6326;
+    border: 1px solid #CD6326;
+    border-radius: 0px 5px 5px 0px;
+    font-family: Roboto;
+    font-size: 23px;
+    line-height: 27px;
+    color: #F7F7F7;
+
 }
 
 /*Main styles end*/
